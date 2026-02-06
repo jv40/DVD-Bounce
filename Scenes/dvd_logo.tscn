@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccvny4evgppmn"]
+
+[ext_resource type="Texture2D" uid="uid://d3x3kgq3vjvwr" path="res://Assets/Leon Smiling.jpg" id="1_8dy8u"]
+[ext_resource type="Script" uid="uid://xrpv6vu35otp" path="res://Scripts/dvd_logo.gd" id="1_lbesd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lbesd"]
+size = Vector2(22.5, 20.875)
+
+[node name="DVD_Logo" type="CharacterBody2D"]
+script = ExtResource("1_lbesd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_8dy8u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+scale = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_lbesd")

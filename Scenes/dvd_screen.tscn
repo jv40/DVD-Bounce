@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://0bqbwj8c1ok6"]
+
+[ext_resource type="PackedScene" uid="uid://ccvny4evgppmn" path="res://Scenes/dvd_logo.tscn" id="1_cd1uq"]
+[ext_resource type="PackedScene" uid="uid://ccfsj0rj1ohdo" path="res://Scenes/wall.tscn" id="2_244cg"]
+
+[node name="DVD_Screen" type="Node2D"]
+
+[node name="DVD_Logo" parent="." instance=ExtResource("1_cd1uq")]
+position = Vector2(287, 249)
+
+[node name="Wall" parent="." instance=ExtResource("2_244cg")]
+
+[node name="Wall2" parent="." instance=ExtResource("2_244cg")]
+position = Vector2(1172, -52)
+
+[node name="Wall3" parent="." instance=ExtResource("2_244cg")]
+position = Vector2(1267, 0)
+rotation = 1.5708
+
+[node name="Wall4" parent="." instance=ExtResource("2_244cg")]
+position = Vector2(1221, 668)
+rotation = 1.5708
