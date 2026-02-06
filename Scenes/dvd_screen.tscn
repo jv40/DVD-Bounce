@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://0bqbwj8c1ok6"]
+[gd_scene load_steps=4 format=3 uid="uid://0bqbwj8c1ok6"]
 
 [ext_resource type="PackedScene" uid="uid://ccvny4evgppmn" path="res://Scenes/dvd_logo.tscn" id="1_cd1uq"]
 [ext_resource type="PackedScene" uid="uid://ccfsj0rj1ohdo" path="res://Scenes/wall.tscn" id="2_244cg"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_244cg"]
 
 [node name="DVD_Screen" type="Node2D"]
 
@@ -20,3 +22,10 @@ rotation = 1.5708
 [node name="Wall4" parent="." instance=ExtResource("2_244cg")]
 position = Vector2(1221, 668)
 rotation = 1.5708
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0, 0, 0, 1)
+z_index = -1
+offset_right = 1154.0
+offset_bottom = 649.0
+texture = SubResource("CanvasTexture_244cg")
